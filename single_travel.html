@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Kanhar Munshi | Video</title>
+    <style>
+
+        .grid {
+            display: flex;
+        }
+        
+        .grid-col  {
+            flex: 1;
+            padding: 0 .15em;
+        }
+
+        .grid .grid-item img {
+            width: 100% !important;
+            height: auto;
+        }
+
+        #lightbox {
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            display: none;
+        }
+        
+        #lightbox img {
+            max-width: 50%;
+            max-height: auto;
+            padding: 10px;
+            background-color: rgb(245, 239, 239);
+            border: 2px solid rgb(10, 9, 9);
+        }
+
+        #lightbox.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- nav-btn -->
+    <div id="nav-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Header: main-header -->
+    <header id="main-header" class="pl-1">
+        <div>
+            <a href="#" class="logo-text">kanhar<br /> munshi</a>
+        </div>
+        <div>
+            <span>photography and film</span>
+        </div>
+        <ul>
+            <li><a href="travel.html" class="active">Travel</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="awards.html">Awards | Publications</a></li>
+            <li><a href="contact.html">About | Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#">Share</a>
+        </div>
+        <div>
+            <span>&copy; Kanhar Munshi. All rights reserved.</span>
+        </div>
+    </header>
+
+    <!-- Section: video -->
+    <section id="single-video">
+        <div class="container single-video-container">
+            <h2 class="single-travel-title"></h2>
+            <div class="liner-100"></div>
+
+            <!-- <div class="grid">
+                <div class="grid-col grid-col--1">
+                
+                </div>
+                <div class="grid-col grid-col--2">
+    
+                </div>
+
+                <div class="grid-item">
+                    <img src="img/travel_1.jpg" alt="img_1">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_2.jpg" alt="img_2">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_3.jpg" alt="img_3">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_4.jpg" alt="img_4">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_5.jpg" alt="img_5">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_6.jpg" alt="img_6">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_7.jpg" alt="img_7">
+                </div>
+                <div class="grid-item">
+                    <img src="img/travel_8.jpg" alt="img_8">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_1.jpg" alt="img_9">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_2.jpg" alt="img_10">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_3.jpg" alt="img_11">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_4.jpg" alt="img_12">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_5.jpg" alt="img_13">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_6.jpg" alt="img_14">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_7.jpg" alt="img_15">
+                </div>
+                <div class="grid-item">
+                    <img src="img/video_8.jpg" alt="img_15">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- script -->
+    <script defer src="js/script.js"></script>
+    <script src="js/travel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> Latest Jquery
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/colcade.js"></script>
+    <!-- <script src="https://unpkg.com/colcade@4/colcade.js"></script> -->
+    <script>
+
+        var colc= new Colcade('.grid', {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+
+    </script>
+</body>
+</html>
